@@ -4,7 +4,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Home from './components/Home';
 import NavbarMain from './components/NavrbarMain';
-import Retrive from './components/Retrive'
+import Retrive from './components/Retrive';
+
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/" element={<Home />} />
-            <Route path="/retrive" element={<Retrive />} />
+            <Route path="Retrive" element={<Retrive />}/>
+
           </Routes>
         </div>
       </div>
