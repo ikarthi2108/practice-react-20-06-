@@ -1,0 +1,67 @@
+{
+  "Register": [
+    {
+      "id": 1689231635937,
+      "firstName": "karthikeyan",
+      "lastName": "R",
+      "email": "mikarthipsg@gmail.com",
+      "password": "Karthi@2108"
+    },
+    {
+      "id": 1689233040821,
+      "firstName": "sanjay",
+      "lastName": "R",
+      "email": "sanjay@gmail.com",
+      "password": "Sanjay@123"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "lays",
+      "price": 20,
+      "description": "A crunch snack",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.R_Uyabt-iEE7oki8DCJp2AHaHa&pid=Api&P=0&h=180"
+    },
+    {
+      "id": 2,
+      "name": "pepsi",
+      "price": 9.99,
+      "description": "A superb drink",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.3-Nm7e9rl1OI9AInnOkBVAHaHa&pid=Api&P=0&h=180"
+    },
+    {
+      "id": 3,
+      "name": "Maggi",
+      "price": 49.99,
+      "description": "2 minutes maggi",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.Yd-d23HK6T6OysNic2ZAEQHaFg&pid=Api&P=0&h=180"
+    }
+  ],
+  "Admin": [
+    {
+      "email": "sanjay@gmail.com",
+      "password": "Sanjay@123"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "checked": false,
+      "item": "Do the Login page",
+      "status": "in progress"
+    },
+    {
+      "id": 5,
+      "checked": false,
+      "item": "Send Mail to the client",
+      "status": "completed"
+    },
+    {
+      "id": 6,
+      "checked": false,
+      "item": "complete the Login page",
+      "status": "completed"
+    }
+  ]
+}

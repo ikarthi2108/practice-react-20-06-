@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Retrieve = () => {
   const navigate = useNavigate();
-  const { productId } = useParams();
+  // const { productId } = useParams();
   const [product, setProduct] = useState([]);
   const [shownames, setNames] = useState(null);
 
@@ -16,7 +16,7 @@ const Retrieve = () => {
   }
 
   const fetchData = () => {
-    fetch("http://localhost:4000/products")
+    fetch("  http://localhost:4000/products")
       .then((response) => response.json())
       .then((data) => {
         setProduct(data);
