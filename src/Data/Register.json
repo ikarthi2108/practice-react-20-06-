@@ -13,6 +13,13 @@
       "lastName": "R",
       "email": "sanjay@gmail.com",
       "password": "Sanjay@123"
+    },
+    {
+      "id": 1689662412526,
+      "firstName": "vishal",
+      "lastName": "sj",
+      "email": "vishal@gmail.com",
+      "password": "Vishal@123"
     }
   ],
   "products": [
@@ -20,22 +27,71 @@
       "id": 1,
       "name": "lays",
       "price": 20,
-      "description": "A crunch snack",
-      "image": "https://tse3.mm.bing.net/th?id=OIP.R_Uyabt-iEE7oki8DCJp2AHaHa&pid=Api&P=0&h=180"
+      "description": "Men Casual Watches Titan Black Dial Watch",
+      "image": "https://5.imimg.com/data5/HL/UM/GL/SELLER-89599085/titan-watch-3-500x500.jpg"
     },
     {
       "id": 2,
       "name": "pepsi",
       "price": 9.99,
-      "description": "A superb drink",
-      "image": "https://tse2.mm.bing.net/th?id=OIP.3-Nm7e9rl1OI9AInnOkBVAHaHa&pid=Api&P=0&h=180"
+      "description": "Blue Dial Titan Mens watch ",
+      "image": "https://5.imimg.com/data5/NP/TS/BE/ANDROID-94371458/product-jpeg-500x500.jpg"
     },
     {
       "id": 3,
       "name": "Maggi",
       "price": 49.99,
-      "description": "2 minutes maggi",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.Yd-d23HK6T6OysNic2ZAEQHaFg&pid=Api&P=0&h=180"
+      "description": "Titan Black Dial Analog Watch 1699SL01",
+      "image": "https://5.imimg.com/data5/UD/JU/MY-35870101/titan-black-dial-analog-watch-1699sl01-500x500.png"
+    },
+    {
+      "id": 4,
+      "name": "Maggi",
+      "price": 49.99,
+      "description": "Titan Black Dial Analog Watch 1699SL01",
+      "image": "https://5.imimg.com/data5/YL/VL/GLADMIN-3323699/90027ql01j-titan-500x500.png"
+    },
+    {
+      "id": 5,
+      "name": "Maggi",
+      "price": 49.99,
+      "description": "Titan Black Dial Analog Watch 1699SL01",
+      "image": "https://5.imimg.com/data5/OE/BF/GLADMIN-3583329/omega-men-black-dial-watch-500x500.png"
+    },
+    {
+      "id": 6,
+      "name": "Maggi",
+      "price": 49.99,
+      "description": "Titan Black Dial Analog Watch 1699SL01",
+      "image": "https://5.imimg.com/data5/YL/VL/GLADMIN-3323699/90027ql01j-titan-500x500.png"
+    },
+    {
+      "id": 7,
+      "name": "Maggi",
+      "price": 49.99,
+      "description": "Titan Black Dial Analog Watch 1699SL01",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/1/CC/WP/TS/93318731/white-dial-men-watch-with-black-strap-500x500.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Maggi",
+      "price": 49.99,
+      "description": "Titan Black Dial Analog Watch 1699SL01",
+      "image": "https://5.imimg.com/data5/DE/DU/MY/SELLER-4469245/titan-digital-black-strap-watch-500x500.png"
+    },
+    {
+      "id": 9,
+      "name": "Maggi",
+      "price": 49.99,
+      "description": "Titan Black Dial Analog Watch 1699SL01",
+      "image": "https://5.imimg.com/data5/YU/EK/IC/SELLER-8169004/1-500x500.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Maggi",
+      "price": 49.99,
+      "description": "Titan Black Dial Analog Watch 1699SL01",
+      "image": "https://5.imimg.com/data5/MH/LC/MY-28245138/selection_084-500x500.png"
     }
   ],
   "Admin": [
@@ -46,22 +102,93 @@
   ],
   "items": [
     {
-      "id": 1,
+      "id": 2,
       "checked": false,
-      "item": "Do the Login page",
-      "status": "in progress"
+      "item": "Play Cricket",
+      "user": {
+        "id": 1689233040821,
+        "firstName": "sanjay",
+        "lastName": "R",
+        "email": "sanjay@gmail.com",
+        "password": "Sanjay@123"
+      },
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "checked": false,
+      "item": "Report the manger",
+      "user": {
+        "id": 1689233040821,
+        "firstName": "sanjay",
+        "lastName": "R",
+        "email": "sanjay@gmail.com",
+        "password": "Sanjay@123"
+      },
+      "status": "completed"
+    },
+    {
+      "id": 4,
+      "checked": false,
+      "item": "complete the Login page",
+      "user": {
+        "id": 1689231635937,
+        "firstName": "karthikeyan",
+        "lastName": "R",
+        "email": "mikarthipsg@gmail.com",
+        "password": "Karthi@2108"
+      },
+      "status": ""
     },
     {
       "id": 5,
       "checked": false,
-      "item": "Send Mail to the client",
+      "item": "Report the manger",
+      "user": {
+        "id": 1689231635937,
+        "firstName": "karthikeyan",
+        "lastName": "R",
+        "email": "mikarthipsg@gmail.com",
+        "password": "Karthi@2108"
+      },
       "status": "completed"
     },
     {
       "id": 6,
       "checked": false,
-      "item": "complete the Login page",
+      "item": "meet me",
+      "user": {
+        "id": 1689233040821,
+        "firstName": "sanjay",
+        "lastName": "R",
+        "email": "sanjay@gmail.com",
+        "password": "Sanjay@123"
+      },
       "status": "completed"
+    },
+    {
+      "id": 7,
+      "checked": false,
+      "item": "Buy an phone",
+      "user": {
+        "id": 1689662412526,
+        "firstName": "vishal",
+        "lastName": "sj",
+        "email": "vishal@gmail.com",
+        "password": "Vishal@123"
+      }
+    },
+    {
+      "id": 8,
+      "checked": false,
+      "item": "learnphp",
+      "user": {
+        "id": 1689231635937,
+        "firstName": "karthikeyan",
+        "lastName": "R",
+        "email": "mikarthipsg@gmail.com",
+        "password": "Karthi@2108"
+      }
     }
   ]
 }

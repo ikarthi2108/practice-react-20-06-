@@ -1,24 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Authentication } from "./Auth";
-// import { ToastContainer, toast } from "react-toastify";
 
-
-const SignIn = () => {
+const SignIn = ({ onUserLogin }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState(null);
 
   const navigate = useNavigate();
-
-  // const location = useLocation();
-  // let { from } = location.state || { from: { pathname: "/" } };
-
-  // const login = () => {
-  //   Authentication.login(() => {
-  //     navigate(from);
-  //   });
-  // };
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -33,24 +22,27 @@ const SignIn = () => {
 
         if (foundUser) {
           // Login successful
-          Authentication.userLogin(() => {  // Change this line
-            navigate("/Viewtask");
+          Authentication.userLogin(() => {
+            onUserLogin(foundUser); // Pass the signed-in user to the parent component
+            navigate("/Viewtask"); // Navigate to the user's tasks page
           });
-          console.log("Login success");
+          setError(null);
         } else {
           // Login failed
-          alert("Invalid Credentials");
-          console.log("Login failed");
+          setError("Invalid Credentials");
         }
       })
       .catch((error) => {
         console.error("Error:", error);
+        setError("Error occurred while signing in");
       });
   };
 
   return (
     <div className="container border-1 border" id="cont">
-       <h5 className="ms-3 p-5" style={{color:"red"}}>Note!Only users can use this Page</h5> 
+      <h5 className="ms-3 p-5" style={{ color: "red" }}>
+        Note! Only users can use this Page
+      </h5>
       <div className="row">
         <div className="col-12 py-5 shadow mb-5 my-custom-shadow">
           <h2 className="p-3">Login with TITAN</h2>
@@ -75,6 +67,10 @@ const SignIn = () => {
               />
             </div>
 
+            {error && (
+              <div className="text-danger mt-3 mb-2">{error}</div>
+            )}
+
             <div className="d-flex justify-content-center mt-4">
               <button className="bg-black text-white btn-size" type="submit">
                 Login
@@ -84,7 +80,7 @@ const SignIn = () => {
             <div className="d-flex justify-content-center mt-2">
               <p className="mt-3 text-center">
                 Don't have an account?{" "}
-                <Link to="/signup" className="text-black w-25">
+                <Link to="/Register" className="text-black w-25">
                   Register
                 </Link>
               </p>
@@ -92,7 +88,6 @@ const SignIn = () => {
           </form>
         </div>
       </div>
-      {/* <ToastContainer /> */}
     </div>
   );
 };

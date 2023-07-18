@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import '../styles/ViewTask.css';
+import { Link } from 'react-router-dom';
 
-const ViewTask = () => {
+const ViewTask = ({ user }) => {
   const [tasks, setTasks] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -15,7 +16,11 @@ const ViewTask = () => {
           throw new Error('Failed to fetch data');
         }
         const data = await response.json();
-        setTasks(data);
+
+        // Filter tasks based on the user's first name
+        const userTasks = data.filter((task) => task.user.firstName === user.firstName);
+        setTasks(userTasks);
+
         setIsLoading(false);
         setError(null);
       } catch (error) {
@@ -25,7 +30,7 @@ const ViewTask = () => {
     };
 
     fetchData();
-  }, []);
+  }, [user]);
 
   const handleStatusChange = async (taskId, newStatus) => {
     try {
@@ -92,14 +97,18 @@ const ViewTask = () => {
 
   return (
     <div className="view-task-container">
+       <div className="user-info">
+        <p>Welcome, {user.firstName}!</p>
+        <Link to="/SignIn">
+          <button id="btn1">Logout</button>
+        </Link>
+      </div>
       <h1 className="title">Your Tasks</h1>
       <div className="task-container">
         {tasks && tasks.length > 0 ? (
           tasks.map((task) => (
             <div className="task-item" key={task.id}>
               <h3>{task.item}</h3>
-              <div className="progress-bar">
-              </div>
               <Select
                 value={selectOptions.find((option) => option.value === task.status)}
                 options={selectOptions}

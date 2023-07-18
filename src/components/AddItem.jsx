@@ -7,7 +7,7 @@ const AddItem = ({newItem,setNewItem,handleSubmit}) => {
     const inputref = useRef()
   return (
     <form className='addForm' onSubmit={handleSubmit}>
-        <label htmlFor='addItem'>Add Item</label>
+        <label htmlFor='addItem' id='additem'>Add Item</label>
         <input
          autoFocus
          ref={inputref}
