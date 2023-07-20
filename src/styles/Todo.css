@@ -226,11 +226,11 @@ footer {
 }
 #search{
   font-weight: bold;
-  padding-right: 30px;
+  padding-right: 75px;
 }
 #additem{
   font-weight: bold;
-  padding-right: 30px;
+  padding-right: 60px;
 }
 #selectuser{
   font-weight: bold;
@@ -242,6 +242,12 @@ footer {
   font-weight: bold;
   color: #f44336;
   text-align: center;
+}
+
+#filterBy {
+  font-weight: bold;
+  padding-right: 60px;
+  padding-bottom: 50px; /* Adjust this padding as needed */
 }
 
 /* Media Queries */

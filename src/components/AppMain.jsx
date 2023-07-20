@@ -144,7 +144,7 @@ const AppMain = () => {
 
       <Dropdown options={dropdownOptions} onChange={handleDropdownChange} />
 
-      <main className='main-content'>
+      <div className='main-content'>
         {isLoading && <p>{`Loading...`}</p>}
         {fetchError && <p>{`Error: ${fetchError}`}</p>}
         {!isLoading && !fetchError && (
@@ -156,7 +156,7 @@ const AppMain = () => {
             handleDelete={handleDelete}
           />
         )}
-      </main>
+      </div>
       <Footer length={items.length} />
     </div>
   );

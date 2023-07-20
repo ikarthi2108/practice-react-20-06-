@@ -91,6 +91,7 @@ const ViewTask = ({ user }) => {
 
   const selectOptions = [
     { value: '', label: 'Select Status' },
+    {value: 'Recieved', label: 'Recieved'},
     { value: 'in progress', label: 'In Progress' },
     { value: 'completed', label: 'Completed' }
   ];
@@ -98,7 +99,7 @@ const ViewTask = ({ user }) => {
   return (
     <div className="view-task-container">
        <div className="user-info">
-        <p>Welcome, {user.firstName}!</p>
+        <p style={{color:'Green'}}>Hello, {user.firstName}!</p>
         <Link to="/SignIn">
           <button id="btn1">Logout</button>
         </Link>
